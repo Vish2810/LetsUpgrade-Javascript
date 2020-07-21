@@ -1,0 +1,30 @@
+In Javascript one can define variables using the keywords var, let or const.
+var a=10;let b=20;const PI=3.14;
+
+var: The scope of a variable defined with the keyword “var” is limited to the “function” within which it is defined. If it is defined outside any function, the scope of the variable is global.
+var is “function scoped”.
+for example:
+var greet = "hey hi";
+    
+    function newFunction() {
+        var hello = "hello";
+    }
+
+let: The scope of a variable defined with the keyword “let” or “const” is limited to the “block” defined by curly braces i.e. {} .
+“let” and “const” are“block scoped”.
+for example:
+let greeting = "say Hi";
+   let times = 4;
+
+   if (times > 3) {
+        let hello = "say Hello instead";
+        console.log(hello);// "say Hello instead"
+    }
+   console.log(hello) // hello is not defined
+
+const: The scope of a variable defined with the keyword “const” is limited to the block defined by curly braces. However if a variable is defined with keyword const, it cannot be reassigned.
+“const” cannot be re-assigned to a new value. However it CAN be mutated.
+for example:
+const greeting = "say Hi";
+    greeting = "say Hello instead";// error: Assignment to constant variable. 
+

@@ -1,0 +1,36 @@
+console.log()
+
+It is  used to print the output to the console. 
+for example:
+console.log('vishnu');  
+console.log(1); 
+console.log(false); 
+
+console.error()
+It is Used to log error message to the console.By default the error message will be highlighted with red color.
+for example:
+console.error('This is a simple error'); 
+
+console.warn()
+It is Used to log warning message to the console. By default the warning message will be highlighted with yellow color.
+for example:
+console.warn('This is a warning')
+
+console.clear()
+It is used to clear the console.
+for example:
+console.clear()
+
+console.table()
+This method allows us to generate a table inside a console. The input must be an array or an object which will be shown as a table.
+for example:
+console.table({'A':11, 'B':22}); 
+
+console.count()
+This method is used to count the number that the function hit by this counting method.
+for example:
+for(let i=0;i<5;i++)
+{ 
+    console.count(i); 
+} 
+
